@@ -1,6 +1,6 @@
 # simple web framework
 
-[class application](./docs/application.html)
+[class application](docs/application.html)
 
 [class request](./docs/request.html)
 
