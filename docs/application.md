@@ -1,3 +1,6 @@
+{::nomarkdown}
+<!-- HTML CODE-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -188,3 +191,4 @@
   <div class='clearall'></div>
 </div>
 </body>
+{:/}
