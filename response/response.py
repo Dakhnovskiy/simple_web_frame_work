@@ -16,6 +16,9 @@ class Response:
         :param headers: заголовки ответа
         """
         self.__response = self.__empty_response if response is None else response
+        if isinstance(self.__response, str):
+            self.__response = self.__response.encode()
+
         self.__status = self.__default_status if status is None else status
         self.__headers = [] if headers is None else headers
 
