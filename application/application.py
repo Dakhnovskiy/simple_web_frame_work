@@ -6,9 +6,12 @@ from response.response import Response
 
 
 class Application:
+    """
+    Класс web-приложение
+    """
 
     def __init__(self):
-        self.__routing_dict = {}
+        self.__routing_map = {}
 
     def __call__(self, environ, start_response):
         """
@@ -27,7 +30,7 @@ class Application:
         :param path_info: Остаток пути в URL соответствующий цели запроса внутри приложения
         :return: функция
         """
-        return self.__routing_dict[path_info]
+        return self.__routing_map[path_info]
 
     def add_response_function(self, path_info, response_function):
         """
@@ -35,4 +38,15 @@ class Application:
         :param path_info: Остаток пути в URL соответствующий цели запроса внутри приложения
         :param response_function: функция-ответ
         """
-        self.__routing_dict[path_info] = response_function
+
+        # TODO: exception for 404
+        self.__routing_map[path_info] = response_function
+
+    def route(self, path_info):
+        """
+        Метод возвращающий декоратор для регистрации функций-ответов
+        """
+        def decorator(response_function):
+            self.add_response_function(path_info, response_function)
+            return response_function
+        return decorator
