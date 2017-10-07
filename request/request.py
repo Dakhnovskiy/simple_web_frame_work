@@ -5,6 +5,9 @@ from urllib.parse import parse_qs
 
 
 class Request:
+    """
+    Класс запроса
+    """
 
     @property
     def query_params(self):
@@ -19,7 +22,7 @@ class Request:
 
     def __init__(self, environ):
         """
-        :param environ: словарь - окружение приходящее в application
+        :param environ: словарь - окружение приходящее в application из uWSGI
         """
         self.__environ = environ
         self.__query_params = None
