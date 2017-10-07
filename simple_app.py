@@ -18,7 +18,7 @@ def hello_world(request):
 @app.route('/params')
 def params(request):
     """
-    http://127.0.0.1:8080/params?a=1;b=2;a=3
+    Пример вызова http://127.0.0.1:8080/params?a=1;b=2;a=3
     """
     return Response('Params: {0}'.format(request.query_params))
 
