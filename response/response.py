@@ -20,4 +20,4 @@ class Response:
         :return: тело ответа
         """
         start_response(self.__status, self.__headers)
-        return self.__response
+        return [self.__response]
