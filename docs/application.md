@@ -1,7 +1,7 @@
 ## Класс Application
 Класс web-приложение
 
-##Методы:
+## Методы:
 * add_response_function(self, path_info, response_function)
 
     Добавить функцию-ответ соответствующую path_info
