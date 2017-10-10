@@ -1,13 +1,13 @@
 # simple web framework
 
-##Класс web-приложение
+## Класс web-приложение
 [class application](docs/application.md)
 
-##Класс запроса
+## Класс запроса
 [class request](./docs/request.md)
 
-##Класс ответа
+## Класс ответа
 [class response](./docs/response.md)
 
-##Пример
+## Пример
 [example](./simple_app.py)
