@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+"""
+Пример простого web-приложения с использованием библиотеки simple_web_frame_work
+"""
 __author__ = 'Dmitriy.Dakhnovskiy'
 
 from application.application import Application

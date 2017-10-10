@@ -1,9 +1,9 @@
 # simple web framework
 
-[class application](docs/application.html)
+[class application](docs/application.md)
 
-[class request](./docs/request.html)
+[class request](./docs/request.md)
 
-[class response](./docs/response.html)
+[class response](./docs/response.md)
 
-[example](./docs/simple_app.html)
+[example](./simple_app.py)
